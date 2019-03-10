@@ -21,7 +21,7 @@ int main(int argc, const char * argv[]) {
         printf("Sonnet Word count: %d \n", (int) myConcordance.sonnetWords.count);
         //cant compare with command f because " word " ignores all instances of "word " and " word".
         [myConcordance fillConcordance];
-        printf("Unique word count: %d", myConcordance.uniqueWordCount);
+        printf("Unique word count: %d \n", myConcordance.uniqueWordCount);
         printf("Number of collisions: %d \n", myConcordance.collisions);
         
     
