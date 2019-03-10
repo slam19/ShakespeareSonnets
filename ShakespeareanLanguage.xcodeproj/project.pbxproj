@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		825FA991223444CD00AF577B /* WordNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 825FA990223444CD00AF577B /* WordNode.m */; };
+		82D75A2F22348F5D00074E85 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D75A2E22348F5D00074E85 /* Location.m */; };
 		82F9C09E22286F6800C11C91 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F9C09D22286F6800C11C91 /* AppDelegate.m */; };
 		82F9C0A122286F6800C11C91 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F9C0A022286F6800C11C91 /* ViewController.m */; };
 		82F9C0A322286F6800C11C91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82F9C0A222286F6800C11C91 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 		82F9C0A922286F6800C11C91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F9C0A822286F6800C11C91 /* main.m */; };
 		82F9C0B422286F6800C11C91 /* ShakespeareanLanguageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F9C0B322286F6800C11C91 /* ShakespeareanLanguageTests.m */; };
 		82F9C0BF22286F6800C11C91 /* ShakespeareanLanguageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F9C0BE22286F6800C11C91 /* ShakespeareanLanguageUITests.m */; };
+		82F9C0CD22286F7300C11C91 /* Concordance.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F9C0CC22286F7300C11C91 /* Concordance.m */; };
+		82F9C0D02228740B00C11C91 /* sonnets.txt in Resources */ = {isa = PBXBuildFile; fileRef = 82F9C0CF2228740B00C11C91 /* sonnets.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		825FA98F223444BD00AF577B /* WordNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordNode.h; sourceTree = "<group>"; };
+		825FA990223444CD00AF577B /* WordNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordNode.m; sourceTree = "<group>"; };
+		82D75A2D22348F5200074E85 /* Location.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		82D75A2E22348F5D00074E85 /* Location.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		82F9C09922286F6800C11C91 /* ShakespeareanLanguage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShakespeareanLanguage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82F9C09C22286F6800C11C91 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		82F9C09D22286F6800C11C91 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -50,6 +58,9 @@
 		82F9C0BA22286F6800C11C91 /* ShakespeareanLanguageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShakespeareanLanguageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82F9C0BE22286F6800C11C91 /* ShakespeareanLanguageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShakespeareanLanguageUITests.m; sourceTree = "<group>"; };
 		82F9C0C022286F6800C11C91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82F9C0CC22286F7300C11C91 /* Concordance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Concordance.m; sourceTree = "<group>"; };
+		82F9C0CE22286F7B00C11C91 /* Concordance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Concordance.h; sourceTree = "<group>"; };
+		82F9C0CF2228740B00C11C91 /* sonnets.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sonnets.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +118,14 @@
 				82F9C0A222286F6800C11C91 /* Assets.xcassets */,
 				82F9C0A422286F6800C11C91 /* Main.storyboard */,
 				82F9C0A722286F6800C11C91 /* Info.plist */,
+				82D75A2D22348F5200074E85 /* Location.h */,
+				82D75A2E22348F5D00074E85 /* Location.m */,
+				825FA98F223444BD00AF577B /* WordNode.h */,
+				825FA990223444CD00AF577B /* WordNode.m */,
 				82F9C0A822286F6800C11C91 /* main.m */,
+				82F9C0CE22286F7B00C11C91 /* Concordance.h */,
+				82F9C0CC22286F7300C11C91 /* Concordance.m */,
+				82F9C0CF2228740B00C11C91 /* sonnets.txt */,
 				82F9C0AA22286F6800C11C91 /* ShakespeareanLanguage.entitlements */,
 			);
 			path = ShakespeareanLanguage;
@@ -234,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82F9C0D02228740B00C11C91 /* sonnets.txt in Resources */,
 				82F9C0A322286F6800C11C91 /* Assets.xcassets in Resources */,
 				82F9C0A622286F6800C11C91 /* Main.storyboard in Resources */,
 			);
@@ -262,7 +281,10 @@
 			files = (
 				82F9C0A122286F6800C11C91 /* ViewController.m in Sources */,
 				82F9C0A922286F6800C11C91 /* main.m in Sources */,
+				825FA991223444CD00AF577B /* WordNode.m in Sources */,
 				82F9C09E22286F6800C11C91 /* AppDelegate.m in Sources */,
+				82D75A2F22348F5D00074E85 /* Location.m in Sources */,
+				82F9C0CD22286F7300C11C91 /* Concordance.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
