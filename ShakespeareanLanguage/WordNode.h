@@ -8,6 +8,16 @@
 
 #ifndef WordNode_h
 #define WordNode_h
+#import "Location.h"
+@interface WordNode<ObjectType>: NSObject
 
+@property NSString *word;
+@property NSMutableArray * locations;
+
+-(id)initWithWord:(NSString *)w AtPosition: (int)p onLine: (int) l ofSonnet:(int)s;
+-(id) initEmptyWord;
+
+
+@end
 
 #endif /* WordNode_h */
