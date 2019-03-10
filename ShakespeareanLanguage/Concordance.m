@@ -58,7 +58,7 @@
                 NSString *wordStr = [wordsInLine objectAtIndex:i];
                 wordStr = [wordStr lowercaseString];
                 WordNode *wordNode = [[WordNode alloc] initWithWord:wordStr AtPosition: i+1 onLine: lineCount ofSonnet:sonnetCount ];
-                [self.sonnetWords addObject: wordNode];
+                [self.sonnetWords addObject: wordNode]; //array of all WordNode from text with location and string.
             }
         }
         lineCount++;
@@ -102,7 +102,7 @@
             index = [self resolveCollisionAt:index withString:wNode.word];
             WordNode *temp = [self.concordance objectAtIndex:index];
             if([temp.word isEqualToString:wNode.word]){
-                [temp.locations addObject:[wNode.locations objectAtIndex:0]];
+                [temp.locations addObject:[wNode.locations objectAtIndex:0]]; //since it is duplicate, we do not insert a new wordNode but only add its location into the existing wordNode.
             }else{
                 [self.concordance replaceObjectAtIndex:index withObject:wNode];
                 self.uniqueWordCount++;
@@ -175,9 +175,9 @@
             return index;
         }else{
             if(self.probingMethod ==0){
-                index++;
+                index++; //linear
             }else{
-                index = index + (a * a) ;
+                index = index + (a * a) ; //quadratic
             }
             index = index%self.tableSize; //wrapping around array
             collidedNode = [self.concordance objectAtIndex:index];
