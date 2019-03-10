@@ -8,6 +8,14 @@
 
 #ifndef Location_h
 #define Location_h
+@interface Location<ObjectType>: NSObject
 
+@property int sonnetLine;
+@property int sonnetNumber;
+@property int wordPosition;
+
+-(id) initWithPosition: (int) p onLine:(int) l ofSonnet: (int) s ;
+
+@end
 
 #endif /* Location_h */
